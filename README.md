@@ -4,7 +4,7 @@
 
 *uniduni_t* is a Zig library that lets you easily colorize your strings and outputs on your code. It uses ANSI escape codes to put color and styles in your strings and outputs.
 
-It was built with <span style="color:red;">love</span>, as part of my ongoing in journey of learning Zig.
+It was built with :heart:, as part of my ongoing journey of learning Zig.
 
 ## Examples:
 
