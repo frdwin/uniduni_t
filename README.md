@@ -1,3 +1,5 @@
+![uniduni_t image](https://codeberg.org/attachments/f0ba7e70-05fe-4f6a-9aa8-1f8bbb087d15)
+
 # uniduni_t
 
 *uniduni_t* is a Zig library that lets you easily use colored outputs on your code.
