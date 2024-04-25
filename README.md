@@ -2,9 +2,9 @@
 
 # uniduni_t
 
-*uniduni_t* is a Zig library that lets you easily use colored outputs on your code.
+*uniduni_t* is a Zig library that lets you easily colorize your strings or outputs on your code. It uses ANSI escape codes to put color and styles in your strings or outputs.
 
-It uses ANSI escape codes to put color in your strings.
+It was built with <span style="color:red;"></span>, as part of my ongoing in journey of learning Zig.
 
 ## Examples:
 
