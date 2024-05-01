@@ -2,7 +2,7 @@
 
 # uniduni_t
 
-*uniduni_t* is a Zig library that lets you easily colorize your strings and outputs on your code. It uses ANSI escape codes to put color and styles in your strings and outputs.
+`uniduni_t` is a Zig library that lets you easily colorize your strings and outputs on your code. It uses ANSI escape codes to put color and styles in your strings and outputs.
 
 It was built with :heart:, as part of my ongoing journey of learning Zig.
 
@@ -18,7 +18,7 @@ pub fn main() !void {
   var cp = uniduni_t.ColorPrint.init(alloc);
   defer cp.deinit();
 
-  cp.add(.{ uniduni_t.ForegroundColor.green, uniduni_t.BackgroundColor.magenta, uniduni_t.Style.italic });
+  cp.add(.{ uniduni_t.ForegroundColor.green, uniduni_t.BackgroundColor.magenta, uniduni_t.Style.italic, uniduni_t.Style.bold });
   try cp.print("This is an italic green text on a magenta background\n");
 }
 ```
