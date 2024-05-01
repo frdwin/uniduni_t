@@ -118,6 +118,7 @@ pub fn main() !void {
 }
 ```
 ## TODO:
-- Format printing;
-- Use your own writer;
-- Add brighter colors.
+- Add bright colors
+- Add hex colors
+- Format printing
+- Add chain function calls
