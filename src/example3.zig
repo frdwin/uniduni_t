@@ -1,12 +1,8 @@
 const std = @import("std");
-const uniduni_t = @import("uniduni_t.zig");
+const Uniduni_t = @import("uniduni_t.zig").Uniduni_t;
 
 pub fn main() !void {
-    const alloc = std.heap.page_allocator;
-    var cp = uniduni_t.ColorPrint.init(alloc);
-    defer cp.deinit();
-
-    cp.add(.{uniduni_t.Color{ .foreground = uniduni_t.ForegroundColor.red }});
-    try cp.print("This is a red text\n");
-    try cp.print("This is also a red text\n");
+    const stdout = std.io.getStdOut().writer();
+    const yellow_string = Uniduni_t.init().yellow().format("This is a yellow string");
+    try stdout.print("{s}\n", .{yellow_string});
 }
