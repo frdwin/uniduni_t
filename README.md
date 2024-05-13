@@ -10,17 +10,52 @@ It was built with :heart:, as part of my ongoing journey of learning Zig.
 
 ### Print with custom foreground, background color and style:
 ```
+const std = @import("std");
+const Uniduni_t = @import("uniduni_t.zig").Uniduni_t;
+const attr = @import("attributes.zig");
+const Color = attr.Color;
+const Style = attr.Style;
+
+pub fn main() !void {
+    const stdout = std.io.getStdOut().writer();
+    const warn = Uniduni_t.init().add(.{ Color.Foreground.red, Color.Background.black, Style.bold });
+    try stdout.print("{s}: This is a warning!\n", .{ warn.format("WARNING") });
+}
 ```
 ### Print with main color aliases:
 ```
+const std = @import("std");
+const Uniduni_t = @import("uniduni_t.zig").Uniduni_t;
+
+pub fn main() !void {
+    const stdout = std.io.getStdOut().writer();
+    const green = Uniduni_t.init().green().bold();
+    try stdout.print("{s}: success!\n", .{green.format("GREAT")});
+}
 ```
-### Print with RGB color:
+### Colorize a string:
 ```
+const std = @import("std");
+const Uniduni_t = @import("uniduni_t.zig").Uniduni_t;
+
+pub fn main() !void {
+    const stdout = std.io.getStdOut().writer();
+    const yellow_string = Uniduni_t.init().yellow().format("This is a yellow string");
+    try stdout.print("{s}\n", .{yellow_string});
+}
 ```
 ### Reuse your setted colors:
 ```
+const std = @import("std");
+const Uniduni_t = @import("uniduni_t.zig").Uniduni_t;
+
+pub fn main() !void {
+    const stdout = std.io.getStdOut().writer();
+    const magenta = Uniduni_t.init().magenta();
+    try stdout.print("This is {s}. This is also a magenta word: {s}.\n", .{ magenta.format("magenta"), magenta.format("Uniduni_t") });
+}
 ```
-### Colorize a string:
+### Print with RGB color:
 ```
 ```
 ### Use uniduni_t on your existing code:
