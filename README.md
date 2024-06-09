@@ -10,7 +10,9 @@ I'm so grateful for all the help I got from the [Ziggit.dev](https://ziggit.dev)
 
 ## Examples:
 
-### Print with custom foreground, background color and style:
+<details>
+<summary>Print with custom foreground, background color and style</summary>
+
 ```
 const std = @import("std");
 const Uniduni_t = @import("uniduni_t.zig").Uniduni_t;
@@ -24,7 +26,12 @@ pub fn main() !void {
     try stdout.print("{s}: This is a warning!\n", .{ warn.format("WARNING") });
 }
 ```
-### Print with main color aliases:
+
+</details>
+
+<details>
+<summary>Print with main color aliases</summary>
+
 ```
 const std = @import("std");
 const Uniduni_t = @import("uniduni_t.zig").Uniduni_t;
@@ -38,7 +45,12 @@ pub fn main() !void {
     try stdout.print("{s}: success!\n", .{bg_green.format("GREAT")});
 }
 ```
-### Colorize a string:
+
+</details>
+
+<details>
+<summary>Colorize a string</summary>
+
 ```
 const std = @import("std");
 const Uniduni_t = @import("uniduni_t.zig").Uniduni_t;
@@ -49,7 +61,12 @@ pub fn main() !void {
     try stdout.print("{s}\n", .{bright_yellow_string});
 }
 ```
-### Reuse your setted colors:
+
+</details>
+
+<details>
+<summary>Reuse your setted colors</summary>
+
 ```
 const std = @import("std");
 const Uniduni_t = @import("uniduni_t.zig").Uniduni_t;
@@ -60,7 +77,12 @@ pub fn main() !void {
     try stdout.print("This is {s}. This is also a magenta word: {s}.\n", .{ magenta.format("magenta"), magenta.format("Uniduni_t") });
 }
 ```
-### Print with RGB color:
+
+</details>
+
+<details>
+<summary>Print with RGB color</summary>
+
 ```
 const std = @import("std");
 const Uniduni_t = @import("uniduni_t.zig").Uniduni_t;
@@ -80,7 +102,12 @@ pub fn main() !void {
     try stdout.print("{s}{s}{s}\n", .{ bg_red.format("R"), bg_green.format("G"), bg_blue.format("B") });
 }
 ```
-### Use uniduni_t on your existing code:
+
+</details>
+
+<details>
+<summary>Use uniduni_t on your existing code</summary>
+
 ```
 const std = @import("std");
 const Uniduni_t = @import("uniduni_t.zig").Uniduni_t;
@@ -96,7 +123,12 @@ pub fn main() !void {
     try stdout.print("This is a default colored string\n", .{});
 }
 ```
-### Print with Hexadecimal code:
+
+</details>
+
+<details>
+<summary>Print with Hexadecimal code</summary>
+
 ```
 const std = @import("std");
 
@@ -112,5 +144,8 @@ pub fn main() !void {
     try stdout.print("{s}\n", .{second.format("Everforest theme is great!")});
 }
 ```
+
+</details>
+
 ## TODO:
 - Detect TTY color and print accordingly
