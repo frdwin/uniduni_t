@@ -1,16 +1,30 @@
-![uniduni_t image](uniduni_t.png)
-
 # uniduni_t
 
 ![Static Badge](https://img.shields.io/badge/Zig-v.0.12-%23F7A41D?style=for-the-badge&logo=zig&logoColor=%23F7A41D&color=%23F7A41D)
 ![Static Badge](https://img.shields.io/badge/tests-passing-black?style=for-the-badge&label=Tests&color=green)
 
+![uniduni_t image](uniduni_t.png)
+
 `uniduni_t` is a Zig library that lets you easily colorize your strings and outputs on your code. It uses ANSI escape codes to put color and styles in your strings and outputs.
 
-It was built with :heart:, as part of my ongoing journey of learning Zig.
+It was built for Linux only, with :heart:, as part of my ongoing journey of learning Zig.
 
 I'm so grateful for all the help I got from the [Ziggit.dev](https://ziggit.dev) community!
 
+## Features:
+
+- [x] Normal colors
+- [x] Styles
+- [x] RGB
+- [x] Hexadecimal
+- [ ] Detects terminal capacity
+- [ ] Use colors only when the terminal supports it
+- [x] Linux support
+- [ ] Windows and MacOS support
+
+## How to use Uniduni_t in your project?
+
+WIP
 
 ## Examples:
 
@@ -152,4 +166,6 @@ pub fn main() !void {
 </details>
 
 ## TODO:
-- Detect TTY color and print accordingly
+- Improve TTY color capacity detection;
+- Print colors accordingly TTY color capacity.
+- Test and support Windows and MacOS.
