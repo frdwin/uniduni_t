@@ -1,12 +1,15 @@
-![uniduni_t image](uniduni_t.png)
+<center>![uniduni_t image](uniduni_t.png)</center>
 
 # uniduni_t
 
 `uniduni_t` is a Zig library that lets you easily colorize your strings and outputs on your code. It uses ANSI escape codes to put color and styles in your strings and outputs.
 
-It was built with :heart:, as part of my ongoing journey of learning Zig (v0.12).
+It was built with :heart:, as part of my ongoing journey of learning Zig.
 
 I'm so grateful for all the help I got from the [Ziggit.dev](https://ziggit.dev) community!
+
+![Static Badge](https://img.shields.io/badge/Zig-v.0.12-%23F7A41D?style=for-the-badge&logo=zig&logoColor=%23F7A41D&color=%23F7A41D)
+
 
 ## Examples:
 
