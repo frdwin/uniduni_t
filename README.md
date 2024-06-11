@@ -1,3 +1,5 @@
+**THE MAIN REPO FOR uniduni_t IS ON CODEBERG: ![HERE](https://codeberg.org/fwinter/uniduni_t)**
+
 # uniduni_t
 
 ![Static Badge](https://img.shields.io/badge/Zig-v.0.12-%23F7A41D?style=for-the-badge&logo=zig&logoColor=%23F7A41D&color=%23F7A41D)
