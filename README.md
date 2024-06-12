@@ -1,4 +1,4 @@
-# **THE MAIN REPO FOR uniduni_t IS ON CODEBERG: [HERE](https://codeberg.org/fwinter/uniduni_t)**
+# **THE MAIN REPO IS ON CODEBERG: [HERE](https://codeberg.org/fwinter/uniduni_t)**
 
 # uniduni_t
 
